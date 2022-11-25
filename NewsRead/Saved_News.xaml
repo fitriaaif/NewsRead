@@ -1,0 +1,102 @@
+﻿<Page x:Class="NewsRead.Saved_News"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NewsRead"
+      mc:Ignorable="d" 
+      d:DesignHeight="812" d:DesignWidth="375"
+      Title="Saved_News">
+
+    <Grid Background="White" Width="375">
+        <Image HorizontalAlignment="Left" Height="64" Margin="2,27,0,0" VerticalAlignment="Top" Width="151" Source="/Assets/logo.png"/>
+        <Rectangle HorizontalAlignment="Center" Height="2" Margin="0,88,0,0" Stroke="Black" VerticalAlignment="Top" Width="335" RenderTransformOrigin="0.5,0.5" Opacity="0.2"/>
+        <Label x:Name="Menu1" Style="{StaticResource Font3}" Content="SAVED" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" FontSize="16" Cursor="None" Padding="0,0,0,0" Width="335"/>
+        <Border CornerRadius="15" Background="White" Margin="20,150,20,531" Width="335" Height="120">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="8" Direction="270" Opacity="0.25" ShadowDepth="2" />
+            </Border.Effect>
+        </Border>
+        <Rectangle HorizontalAlignment="Left" Height="80" Margin="38,170,0,0" VerticalAlignment="Top" Width="80">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/News6.jpg" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="Title3" Style="{StaticResource Font1}" Content="President Jokowi oficially opens&#xD;&#xA;2022 G20 Summit in Bali" HorizontalAlignment="Left" Margin="131,180,0,0" VerticalAlignment="Top" Padding="0,0,0,0" Width="203" Height="28" FontSize="11"/>
+        <Label x:Name="Year3" Style="{StaticResource Font2}" Content="2022" HorizontalAlignment="Left" Margin="131,238,0,0" VerticalAlignment="Top" FontSize="7" Cursor="None" Padding="0,0,0,0" Foreground="Black" Opacity="0.5"/>
+        <Label x:Name="Desc3" Style="{StaticResource Font2}" Content="Source Media" HorizontalAlignment="Left" Margin="188,238,0,0" VerticalAlignment="Top" FontSize="7" Cursor="None" Padding="0,0,0,0"/>
+        <Button x:Name="Share1" HorizontalAlignment="Left" Margin="294,235,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="Share1_Click" Width="15" Height="15">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/share.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Saved1" HorizontalAlignment="Left" Margin="322,235,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="Saved1_Click" Width="15" Height="15">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/bookmark2.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Border CornerRadius="15" Background="White" Margin="20,296,20,385" Width="335" Height="120">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="8" Direction="270" Opacity="0.25" ShadowDepth="2"/>
+            </Border.Effect>
+        </Border>
+        <Rectangle HorizontalAlignment="Left" Height="80" Margin="38,316,0,0" VerticalAlignment="Top" Width="80">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/News7.jpg" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="Title4" Style="{StaticResource Font1}" Content="Jokowi inaugurates Sheikh Zayed&#xD;&#xA;Grand Mosque in Solo" HorizontalAlignment="Left" Margin="131,327,0,0" VerticalAlignment="Top" Padding="0,0,0,0" Width="203" Height="28" FontSize="11"/>
+        <Label x:Name="Year4" Style="{StaticResource Font2}" Content="2022" HorizontalAlignment="Left" Margin="131,385,0,0" VerticalAlignment="Top" FontSize="7" Cursor="None" Padding="0,0,0,0" Foreground="Black" Opacity="0.5"/>
+        <Label x:Name="Desc4" Style="{StaticResource Font2}" Content="Source Media" HorizontalAlignment="Left" Margin="188,385,0,0" VerticalAlignment="Top" FontSize="7" Cursor="None" Padding="0,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="15" Margin="294,383,0,0" VerticalAlignment="Top" Width="15">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/share.png" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="15" Margin="322,383,0,0" VerticalAlignment="Top" Width="15">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/bookmark2.png" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Border CornerRadius="15" Background="White" Margin="20,444,20,237" Width="335" Height="120">
+            <Border.Effect>
+                <DropShadowEffect Direction="270" Opacity="0.25" BlurRadius="8" ShadowDepth="2" RenderingBias="Quality"/>
+            </Border.Effect>
+        </Border>
+        <Rectangle HorizontalAlignment="Left" Height="80" Margin="38,464,0,0" VerticalAlignment="Top" Width="80">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/News8.jpg" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="Title5" Style="{StaticResource Font1}" Content="NCT'127 Concert in Indonesia&#xD;&#xA;faces bomb threat" HorizontalAlignment="Left" Margin="131,474,0,0" VerticalAlignment="Top" Padding="0,0,0,0" Width="203" Height="28" FontSize="11"/>
+        <Label x:Name="Year5" Style="{StaticResource Font2}" Content="2022" HorizontalAlignment="Left" Margin="131,534,0,0" VerticalAlignment="Top" FontSize="7" Cursor="None" Padding="0,0,0,0" Foreground="Black" Opacity="0.5"/>
+        <Label x:Name="Desc5" Style="{StaticResource Font2}" Content="Source Media" HorizontalAlignment="Left" Margin="188,534,0,0" VerticalAlignment="Top" FontSize="7" Cursor="None" Padding="0,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="15" Margin="294,532,0,0" VerticalAlignment="Top" Width="15">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/share.png" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="15" Margin="322,532,0,0" VerticalAlignment="Top" Width="15">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Assets/bookmark2.png" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Border CornerRadius="30" Background="#FF007CC7" BorderBrush="#FF007CC7" Margin="0,746,0,0"/>
+        <Rectangle HorizontalAlignment="Center" Height="30" Margin="0,782,0,0" VerticalAlignment="Top" Width="375" Fill="#FF007CC7"/>
+        <Button x:Name="Home" HorizontalAlignment="Left" Margin="54,765,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="Home_Click" Width="25" Height="25">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/home1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Saved" HorizontalAlignment="Center" Margin="0,765,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="Saved_Click" Width="25" Height="25">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/bookmark.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Account" HorizontalAlignment="Left" Margin="298,765,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Click="Account_Click" Width="24" Height="25">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/user1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>
